@@ -1,0 +1,91 @@
+---
+// You may need to adjust the image paths based on your Astro project structure
+---
+
+<div class="bg-gray-100 py-16 sm:py-24">
+    <div class="container-default mx-auto px-4">
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full xl:w-1/2 px-4 mb-8">
+          <div class="bg-blue-600 bg-cover text-white p-8 h-full flex flex-col justify-center rounded-lg" style="background-image: url('/assets/img/shape/banner-3.webp');">
+            <h5 class="text-sm font-semibold mb-2 text-white">Our Services</h5>
+            <h2 class="text-5xl font-bold mb-6 text-white">Our creative & digital <br>agency services</h2>
+            <div class="mt-8">
+              <a href="/services" class="inline-flex items-center text-white border border-white px-6 py-2 hover:bg-white hover:text-blue-600 transition-colors duration-300">
+                See All
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        {[
+          {
+            icon: "/assets/img/icon/web-dev.png",
+            title: "Web Development",
+            description: "Creating user-friendly, effective websites.",
+            link: "/services/web-development/website-development",
+            category: "software"
+          },
+          {
+            icon: "/assets/img/icon/web-design.png",
+            title: "Web Designing",
+            description: "Crafting visually stunning, engaging designs.",
+            link: "/services/web-designing/template-designing",
+            category: "Designing"
+          },
+         
+          {
+            icon: "/assets/img/icon/software-development.png",
+            title: "Software Development",
+            description: "Building tailored software for your needs.",
+            link: "/services/software-development/charity-management-system",
+            category: "software"
+          },
+          {
+            icon: "/assets/img/icon/8.png",
+            title: "Charity Management",
+            description: "Empowering charities with custom software.",
+            link: "/services/software-development/charity-management-system",
+            category: "Management"
+          },
+          {
+            icon: "/assets/img/icon/9.png",
+            title: "Digital Marketing",
+            description: "Boosting your online presence strategically.",
+            link: "/services/digital-marketing/charity-advertising",
+            category: "Agency"
+          },
+          {
+            icon: "/assets/img/icon/9.png",
+            title: "Social Media Optimization",
+            description: "Social Media Optimization Services to Elevate Your Charity",
+            link: "/services/digital-marketing/charity-social-media-optimisation",
+            category: "Agency"
+          }
+        ].map((service) => (
+          <div class="w-full md:w-1/2 xl:w-1/4 px-4 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-md relative overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+              <div class="mb-4">
+                <img src={service.icon} alt={service.title} class="w-12 h-12 object-contain" />
+              </div>
+              <p class="text-gray-600 mb-2">{service.description}</p>
+              <h4 class="text-xl font-semibold mb-2">
+                <a href={service.link} class="hover:text-blue-600 transition-colors duration-300">{service.title}</a>
+              </h4>
+              <span class="text-sm text-gray-500">{service.category}</span>
+              <a href={service.link} class="absolute bottom-4 right-4 w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-600 hover:text-white transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+              <div class="absolute -bottom-2 -right-2 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
+                <img src="/assets/img/shape/15.webp" alt="Shape" class="w-24 h-24" />
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>

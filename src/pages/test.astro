@@ -1,0 +1,993 @@
+---
+import GiftAidForm from "../components/GiftAidForm.astro";
+import Layout from "../layouts/Layout.astro";
+const title =
+  Astro.url.pathname.split("/").pop().replace(/\..*$/, "") || "Home";
+---
+
+<Layout>
+  <!--...::: Breadcrumb Section Start :::... -->
+  <section class="section-breadcrumb">
+    <!-- Breadcrumb Section Spacer -->
+    <div class="breadcrumb-wrapper">
+      <!-- Section Container -->
+      <div class="container-default">
+        <div class="breadcrumb-block">
+          <h1 class="breadcrumb-title capitalize">Gift Aid</h1>
+          <ul class="breadcrumb-nav">
+            <li><a href="/">Home</a></li>
+            <li class="capitalize">{title}</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Section Container -->
+
+      <!-- Breadcrumb Shape - 1 -->
+      <div class="absolute left-0 top-0 -z-10">
+        <img
+          src="assets/img/elements/breadcrumb-shape-1.svg"
+          alt="hero-shape-1"
+          width="291"
+          height="380"
+        />
+      </div>
+
+      <!-- Breadcrumb Shape - 2 -->
+      <div class="absolute bottom-0 right-0 -z-[1]">
+        <img
+          src="assets/img/elements/breadcrumb-shape-2.svg"
+          alt="hero-shape-2"
+          width="291"
+          height="380"
+        />
+      </div>
+    </div>
+    <!-- Breadcrumb Section Spacer -->
+  </section>
+  <!--...::: Breadcrumb Section End :::... -->
+
+  <!--...::: Hero Section Start :::... -->
+  <section class="section-hero">
+    <div class="pb-20 pt-28 md:pt-36 lg:pb-24 lg:pt-40 xl:pb-32 xl:pt-44">
+      <div class="container mx-auto px-4">
+        <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <div class="max-w-xl mx-auto text-center lg:text-left">
+            <p
+              class="border-black border py-1 px-2 rounded-md inline-block text-xs md:text-lg"
+            >
+              For Registered Charities and CASC in the UK
+            </p>
+            <h1
+              class="font-semibold text-left text-4xl md:text-6xl pt-4 -tracking-normal"
+            >
+              Simplifying & optimizing Gift Aid Submissions for Charities Across
+              the UK
+            </h1>
+            <p class="md:mb-0 md:py-10 py-2 text-left text-xs md:text-lg">
+              Add an additional 25% to your total donations.
+            </p>
+            <div
+              class="flex justify-center items-center lg:justify-start mb-6 gap-4"
+            >
+              <button
+                class="btn is-purple is-large group h-12 md:h-16 w-40 md:w-48 text-xs md:text-base hover:border-[#8E66FF]"
+              >
+                Learn More <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+              <button class="flex justify-center items-center">
+                <img
+                  class="h-12 md:h-16 w-40 md:48"
+                  src="/assets/img/gift-aid/hmrc-checkmark-black.png"
+                  alt="gift-aid-icon"
+                />
+              </button>
+            </div>
+            <div class="mt-12">
+              <img
+                src="assets/img/gift-aid/gift-aid-equation-2.png"
+                alt="landscape-img"
+                class="w-[1000px] h-[250px] object-contain"
+              />
+            </div>
+          </div>
+
+          <div class="relative max-w-xl mx-auto">
+            <img
+              src="assets/img/gift-aid/gift-aid-banner-img.png"
+              alt="hero-img"
+              class="w-[700px] h-[800px] rounded-md"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--...::: Hero Section End :::... -->
+
+  <!-- Section Two Start -->
+  <section class="section-fact">
+    <!-- Section Space -->
+    <div>
+      <!-- Section Container -->
+      <div class="container-custom has-container-custom">
+        <!-- Fact Area Block -->
+        <div
+          class="grid gap-10 gap-x-12 lg:grid-cols-2 xl:grid-cols-[1fr_minmax(0,_0.7fr)] xxl:gap-x-[185px]"
+        >
+          <!-- Content Block Left -->
+          <div
+            class="jos md:pt-10"
+            data-jos_animation="fade-right"
+            data-jos_delay="0"
+          >
+            <!-- Section Wrapper -->
+            <div class="md:ml-4 sm:ml-8">
+              <!-- Section Block -->
+              <div class="mb-5 md:pe-5">
+                <h2
+                  class="text-black text-3xl sm:text-4xl lg:text-5xl font-semibold"
+                >
+                  What is <span class="text-[#8E66FF]">Gift Aid?</span>
+                </h2>
+                <p class="text-black mt-10 text-left">
+                  Gift Aid is a great way for your charity or Community Amateur
+                  Sports Club (CASC) to boost donations at no extra cost. You
+                  can claim an extra 25p from HMRC for every £1 donated, as long
+                  as the donor pays basic rate tax and the donation comes from
+                  their own funds. <br /><br />With our Gift Aid services, you
+                  can claim the donations increases by 25%, helping you raise
+                  more for your cause. It's an easy way to enhance your funding,
+                  but donors need to tick the Gift Aid box when contributing. <br
+                  /><br />Encouraging donors to opt into Gift Aid ensures your
+                  organization receives maximum support. Each unticked box means
+                  missed funds that could further your mission.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Block Left -->
+          <!-- Content Block Right -->
+          <div
+            class="jos order-2 lg:order-1"
+            data-jos_animation="fade-left"
+            data-jos_delay="0"
+          >
+            <div
+              class="relative flex items-center justify-center mx-auto lg:mx-0 max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-full"
+            >
+              <img
+                src="/assets/img/gift-aid/gift-aid-section2.png"
+                alt="gift-aid"
+                class="h-auto w-auto"
+              />
+            </div>
+          </div>
+          <!-- Content Block Right -->
+        </div>
+        <!-- Fact Area Block -->
+      </div>
+      <!-- Section Container -->
+    </div>
+    <!-- Section Space -->
+  </section>
+  <!-- Section Two End -->
+
+  <!--...::: Fact Section Start :::... -->
+  <section class="section-fact mt-5 md:mt-20">
+    <!-- Section Background -->
+    <div
+      class="bg-cover bg-center"
+      style="background-image: url('/assets/img/gift-aid/gift-aid-section-3-banner-img.png');"
+    >
+      <!-- Section Space -->
+      <div class="py-20 lg:py-[100px]">
+        <!-- Section Container -->
+        <div class="container-default">
+          <!-- Fact Area -->
+          <div
+            class="grid grid-cols-1 items-center gap-x-8 gap-y-10 lg:grid-cols-[0.8fr_minmax(0,_1fr)] xl:gap-x-44 xxl:gap-x-56"
+          >
+            <!-- Fact Left Side -->
+            <div
+              class="order-2 grid grid-cols-1 gap-8 sm:gap-[50px] sm:grid-cols-1 lg:order-1"
+            >
+              <div>
+                <h3
+                  class="text-white text-3xl md:text-6xl font-bold mb-5 -tracking-normal"
+                >
+                  Maximize Your Donations with Gift Aid
+                </h3>
+                <button
+                  class="mt-5 px-6 py-3 hover:bg-slate-50 hover:text-sky-600 text-white font-semibold rounded-md border duration-150"
+                  >Get In Touch</button
+                >
+              </div>
+            </div>
+            <!-- Fact Left Side -->
+
+            <!-- Fact Right Side -->
+            <div class="order-1 lg:order-2">
+              <!-- Section Content Wrapper -->
+              <div class="jos">
+                <!-- Section Content Block -->
+                <div>
+                  <p class="text-white md:text-2xl text-lg leading-relaxed">
+                    As a registered UK charity or Community Amateur Sports Club
+                    (CASC), you have a powerful tool at your disposal: Gift Aid.
+                    This scheme allows you to claim additional funds from HMRC,
+                    significantly boosting the value of donations you receive.
+                  </p>
+                </div>
+                <!-- Section Content Block -->
+              </div>
+              <!-- Section Content Wrapper -->
+            </div>
+            <!-- Fact Right Side -->
+          </div>
+          <!-- Fact Area -->
+        </div>
+        <!-- Section Container -->
+      </div>
+      <!-- Section Space -->
+    </div>
+    <!-- Section Background -->
+  </section>
+  <!--...::: Fact Section End :::... -->
+
+  <!-- Section Three Start -->
+  <section class="section-fact">
+    <!-- Section Space -->
+    <div class="md:p-5">
+      <!-- Section Container -->
+      <div class="container-custom has-container-custom mb-5 md:mb-5">
+        <!-- Fact Area Block -->
+        <div
+          class="grid gap-10 items-center gap-x-12 lg:grid-cols-2 xl:grid-cols-[1fr_minmax(0,_0.7fr)] xxl:gap-x-[185px]"
+        >
+          <!-- Content Block Left -->
+          <div
+            class="jos md:pt-10 pt-5"
+            data-jos_animation="fade-right"
+            data-jos_delay="0"
+          >
+            <!-- Section Wrapper -->
+            <div class="md:ml-4 sm:ml-8">
+              <!-- Section Block -->
+              <div class="mb-5 md:pe-5">
+                <h2
+                  class="text-black text-3xl sm:text-4xl lg:text-5xl font-semibold"
+                >
+                  How Gift Aid Works for Your
+                  <span class="text-[#8E66FF]">Organization</span>
+                </h2>
+                <p class="text-black mt-10 text-left">
+                  With years of experience, Techno Serve can help your Islamic
+                  charity unlock the benefits of Gift Aid. We simplify the
+                  process, ensuring your charity claims the extra 25% from
+                  donations made by UK taxpayers. From setting up forms to
+                  managing claims, we handle everything to maximize your
+                  charity's impact effortlessly.
+                </p>
+                <button
+                  class="btn is-large group inline-block bg-[white] text-[#8E66FF] border border-[#8E66FF] hover:bg-[#8E66FF] hover:text-white mt-5"
+                >
+                  Learn More <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Block Left -->
+          <!-- Content Block Right -->
+          <div
+            class="jos order-2 lg:order-1"
+            data-jos_animation="fade-left"
+            data-jos_delay="0"
+          >
+            <div
+              class="relative flex items-center justify-center mx-auto lg:mx-0 max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-full"
+            >
+              <img
+                src="/assets/img/gift-aid/gift-aid-section-4-equation.png"
+                alt="gift-aid"
+                class="h-auto w-auto"
+              />
+            </div>
+          </div>
+          <!-- Content Block Right -->
+        </div>
+        <!-- Fact Area Block -->
+      </div>
+      <!-- Section Container -->
+    </div>
+    <!-- Section Space -->
+    <div class="px-5 md:px-36">
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Feature Item -->
+        <div class="jos" data-jos_delay="0.3">
+          <div class="hover-solid-shadow h-full">
+            <div
+              class="h-full rounded-[10px] border-2 border-ColorBlack bg-white p-[30px]"
+            >
+              <div
+                class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack lg:text-2xl"
+              >
+                Claim 25p Extra for Every £1 Donated
+              </div>
+              <p>
+                For every £1 donated by an eligible taxpayer, you can claim an
+                extra 25p from HMRC.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature Item -->
+        <!-- Feature Item -->
+        <div class="jos" data-jos_delay="0.3">
+          <div class="hover-solid-shadow h-full">
+            <div
+              class="h-full rounded-[10px] border-2 border-ColorBlack bg-white p-[30px]"
+            >
+              <div
+                class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack lg:text-2xl"
+              >
+                Claim 25p Extra for Every £1 Donated
+              </div>
+              <p>
+                For every £1 donated by an eligible taxpayer, you can claim an
+                extra 25p from HMRC.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature Item -->
+        <!-- Feature Item -->
+        <div class="jos" data-jos_delay="0.3">
+          <div class="hover-solid-shadow h-full">
+            <div
+              class="h-full rounded-[10px] border-2 border-ColorBlack bg-white p-[30px]"
+            >
+              <div
+                class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack lg:text-2xl"
+              >
+                Claim 25p Extra for Every £1 Donated
+              </div>
+              <p>
+                For every £1 donated by an eligible taxpayer, you can claim an
+                extra 25p from HMRC.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature Item -->
+      </div>
+    </div>
+  </section>
+  <!-- Section Three End -->
+
+  <!-- Section Five Start -->
+  <div class="rich-text mt-10 md:mt-20 md:mx-36 ms-5 pe-2">
+    <h2 class="text-3xl md:text-4xl font-semibold">The Impact of Gift Aid</h2>
+    <p class="mt-5">
+      Gift Aid is a crucial source of additional funding for the charity sector,
+      contributing millions of pounds annually. However, many charities,
+      possibly including yours, are missing out on this valuable extra income.
+      This often occurs due to several common challenges:
+    </p>
+    <ol class="list-inside list-decimal mt-5">
+      <li>Eligible taxpayers forgetting to tick the Gift Aid box.</li>
+      <li>
+        Lack of comprehensive understanding about how the Gift Aid scheme works
+        among staff members.
+      </li>
+      <li>
+        Absence of proper systems to gather and record the required information
+        in a manner compliant with HMRC's requirements.
+      </li>
+    </ol>
+    <p class="mt-5">
+      These issues can lead to significant lost opportunities for increasing
+      your charity's income. By addressing these challenges, you can potentially
+      unlock substantial additional funding for your cause.
+    </p>
+  </div>
+  <!-- Section Five End -->
+
+  <!--...::: Testimonial Section Start :::... -->
+  <section class="section-testimonial">
+    <!-- Section Background -->
+    <div class="">
+      <!-- Section Space -->
+      <div class="mt-5 md:mt-20">
+        <!-- Section Container -->
+        <div class="container-default">
+          <!-- Section Content Wrapper -->
+          <div class="jos mb-[60px] xl:mb-20">
+            <!-- Section Content Block -->
+            <div class="max-w-[746px]">
+              <h3 class="-tracking-wide text-[#2667FF] text-2xl font-semibold">
+                Getting Started
+              </h3>
+              <div class="mt-5">
+                <h2
+                  class="text-black text-3xl sm:text-4xl md:text-5xl font-semibold"
+                >
+                  What We Do as a Gift Aid <span class="text-[#8E66FF]"
+                    >Service Provider</span
+                  >
+                </h2>
+              </div>
+            </div>
+            <!-- Section Content Block -->
+          </div>
+          <!-- Section Content Wrapper -->
+
+          <!-- Testimonial List -->
+          <div
+            class="grid grid-cols-1 gap-x-6 gap-y-10 md:grid-cols-2 lg:grid-cols-3"
+          >
+            <!-- Testimonial Item -->
+            <div class="jos" data-jos_animation="fade-left" data-jos_delay="0">
+              <div class="mb-7 h-[70px] w-[70px] overflow-hidden">
+                <img
+                  src="assets/img/gift-aid/step-1.png"
+                  alt="testimonial-user-1"
+                  width="70"
+                  height="70"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+              <span class="block font-semibold text-black text-xl"
+                >Data Organization</span
+              >
+              <blockquote class="mt-4 text-xl text-black md:text-2xl">
+                Efficiently structuring and arranging data for easy access,
+                management, and analysis, ensuring optimal performance and
+                usability.
+              </blockquote>
+            </div>
+            <!-- Testimonial Item -->
+            <!-- Testimonial Item -->
+            <div class="jos" data-jos_animation="fade-left" data-jos_delay="0">
+              <div class="mb-7 h-[70px] w-[70px] overflow-hidden">
+                <img
+                  src="assets/img/gift-aid/step-2.png"
+                  alt="testimonial-user-1"
+                  width="70"
+                  height="70"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+              <span class="block font-semibold text-black text-xl"
+                >Data Formatting</span
+              >
+              <blockquote class="mt-4 text-xl text-black md:text-2xl">
+                Standardizing and converting data into required formats,
+                ensuring compatibility across systems and platforms.
+              </blockquote>
+            </div>
+            <!-- Testimonial Item -->
+            <!-- Testimonial Item -->
+            <div class="jos" data-jos_animation="fade-left" data-jos_delay="0">
+              <div class="mb-7 h-[70px] w-[70px] overflow-hidden">
+                <img
+                  src="assets/img/gift-aid/step-3.png"
+                  alt="testimonial-user-1"
+                  width="70"
+                  height="70"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+              <span class="block font-semibold text-black text-xl"
+                >Data Cleaning</span
+              >
+              <blockquote class="mt-4 text-xl text-black md:text-2xl">
+                Eliminating inaccuracies, duplicates, and inconsistencies in
+                datasets, enhancing data quality and reliability for insightful,
+                data-driven decisions.
+              </blockquote>
+            </div>
+            <!-- Testimonial Item -->
+            <!-- Testimonial Item -->
+            <div class="jos" data-jos_animation="fade-left" data-jos_delay="0">
+              <div class="mb-7 h-[70px] w-[70px] overflow-hidden">
+                <img
+                  src="assets/img/gift-aid/step-4.png"
+                  alt="testimonial-user-1"
+                  width="70"
+                  height="70"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+              <span class="block font-semibold text-black text-xl"
+                >Creating a comprehensive and robust database</span
+              >
+              <blockquote class="mt-4 text-xl text-black md:text-2xl">
+                Designing and implementing a reliable data storage system to
+                support robust data management and retrieval.
+              </blockquote>
+            </div>
+            <!-- Testimonial Item -->
+            <!-- Testimonial Item -->
+            <div class="jos" data-jos_animation="fade-left" data-jos_delay="0">
+              <div class="mb-7 h-[70px] w-[70px] overflow-hidden">
+                <img
+                  src="assets/img/gift-aid/step-5.png"
+                  alt="testimonial-user-1"
+                  width="70"
+                  height="70"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+              <span class="block font-semibold text-black text-xl"
+                >GDPR & Compliance</span
+              >
+              <blockquote class="mt-4 text-xl text-black md:text-2xl">
+                Ensuring data management practices adhere to GDPR and other
+                regulatory requirements to protect personal data.
+              </blockquote>
+            </div>
+            <!-- Testimonial Item -->
+            <!-- Testimonial Item -->
+            <div class="jos" data-jos_animation="fade-left" data-jos_delay="0">
+              <div class="mb-7 h-[70px] w-[70px] overflow-hidden">
+                <img
+                  src="assets/img/gift-aid/step-6.png"
+                  alt="testimonial-user-1"
+                  width="70"
+                  height="70"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+              <span class="block font-semibold text-black text-xl"
+                >Data Submission and Compliance Assistance</span
+              >
+              <blockquote class="mt-4 text-xl text-black md:text-2xl">
+                Managing submissions and providing support during regulatory
+                inspections, such as HMRC gift aid audits.
+              </blockquote>
+            </div>
+            <!-- Testimonial Item -->
+          </div>
+          <!-- Testimonial List -->
+        </div>
+        <!-- Section Container -->
+      </div>
+      <!-- Section Space -->
+    </div>
+    <!-- Section Background -->
+  </section>
+  <!--...::: Testimonial Section End :::... -->
+
+  <!-- Section Six Start -->
+  <section class="section-about-hero">
+    <div class="relative z-10 overflow-hidden">
+      <!-- Section Space -->
+      <div class="my-20">
+        <!-- Section Container -->
+        <div class="container-custom has-container-custom">
+          <!-- About Hero Area -->
+          <div
+            class="grid items-center gap-10 lg:grid-cols-2 lg:gap-[60px] xl:gap-[100px] xxl:grid-cols-[1fr_minmax(0,_1.1fr)]"
+          >
+            <!-- About Hero Image Block -->
+            <div
+              class="jos order-2 lg:order-1"
+              data-jos_animation="fade-left"
+              data-jos_delay="0"
+            >
+              <div
+                class="relative flex items-center justify-center ms-auto lg:mx-0 max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-full"
+              >
+                <img
+                  src="/assets/img/gift-aid/gift-aid-section-6-equation.png"
+                  alt="gift-aid"
+                  class="h-auto w-auto"
+                />
+              </div>
+            </div>
+            <!-- About Hero Image Block -->
+            <!-- About Hero Content Block -->
+            <div
+              class="jos order-1 lg:order-2"
+              data-jos_animation="fade-right"
+              data-jos_delay="0.3"
+            >
+              <!-- Section Wrapper -->
+              <div>
+                <!-- Section Block -->
+                <h2 class="text-4xl font-semibold mb-5 text-left">
+                  Maximizing Your Gift Aid Claims
+                </h2>
+                <!-- Section Block -->
+                <p class="text-base text-left">
+                  Ensuring that you capture Gift Aid declarations for all
+                  eligible donations is vital. By doing so, you can:
+                </p>
+                <ul class="list-decimal my-5 ms-5 text-base text-left">
+                  <li>
+                    <p>
+                      Increase your overall income without additional
+                      fundraising efforts.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Stretch every pound donated further in support of your
+                      cause.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Demonstrate to donors how their contributions are
+                      maximized through effective financial management.
+                    </p>
+                  </li>
+                </ul>
+                <p class="text-base text-left">
+                  These issues can lead to significant lost opportunities for
+                  increasing your charity's income. By addressing these
+                  challenges, you can potentially unlock substantial additional
+                  funding for your cause.
+                </p>
+
+                <h3
+                  class="font-bold text-2xl -tracking-normal text-[#855afa] py-2 text-left"
+                >
+                  Donor Eligibility Criteria
+                </h3>
+                <p class="text-base text-left">
+                  To claim Gift Aid on a donation, the donor must:
+                </p>
+                <ul class="list-decimal ps-4 text-left lg:text-left text-base">
+                  <li>
+                    <p>Be a UK taxpayer.</p>
+                  </li>
+                  <li>
+                    <p>Make a cash contribution.</p>
+                  </li>
+                  <li>
+                    <p>
+                      Pay enough UK income and/or capital gains tax in each tax
+                      year to cover the amount of tax that all charities claim
+                      on their behalf for that tax year.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <!-- Section Wrapper -->
+            </div>
+            <!-- About Hero Content Block -->
+          </div>
+          <!-- About Hero Area -->
+        </div>
+        <!-- Section Container -->
+      </div>
+      <!-- Section Space -->
+    </div>
+  </section>
+  <!-- Section Six End -->
+
+  <!-- section Eight Start -->
+
+  <!-- Section Eight End -->
+
+  <section>
+    <div
+      class="flex items-center justify-center bg-[#b991f9] md:bg-gradient-to-r from-[#985AFF] to-[#FFFFFF] md:px-36"
+    >
+      <div class="w-full h-full flex justify-center items-center md:py-10">
+        <div class="flex flex-wrap items-center justify-center w-screen">
+          <div class="w-full md:w-2/3 ps-5 pt-5">
+            <h3
+              class="text-white text-3xl md:text-5xl font-semibold md:mb-4 -tracking-normal"
+            >
+              Get Ready For HMRC With Us
+            </h3>
+            <p class="text-black mt-5">
+              Working with HMRC for more than 2 years, Techno Serve ensures your
+              charity meets all compliance standards. We provide expert advice,
+              guiding you through HMRC requirements and preparing your charity
+              for potential audits. Our proven processes support charities in
+              securing and maintaining Gift Aid compliance with confidence and
+              ease.
+            </p>
+          </div>
+          <div class="w-full md:w-1/3 py-10 px-14">
+            <img
+              src="/assets/img/gift-aid/hmrc-checkmark-clr.png"
+              alt="hmrc-logo"
+              class="h-auto w-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Nine Start -->
+  <section>
+    <div
+      class="max-w-7xl mx-auto py-8 px-4 lg:flex lg:justify-center lg:space-x-8 pt-40"
+    >
+      <!-- Left Section -->
+      <div class="lg:w-1/2 border-2 border-black rounded-lg p-4">
+        <!-- Title -->
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">
+          Introducing iCHARMS: Your Solution for Efficient <span
+            class="text-indigo-500">Gift Aid Claims</span
+          >
+        </h2>
+
+        <!-- Description -->
+        <p class="text-black mb-6">
+          To address the challenges of Gift Aid management and maximize your
+          claims, we’re proud to introduce iCHARMS - an HMRC-approved software
+          solution designed specifically for Gift Aid claims.
+        </p>
+
+        <!-- Key Features Section -->
+        <div class="p-2 rounded-lg">
+          <h3 class="text-xl font-bold text-gray-800 mb-4 tracking-normal">
+            Key features of iCHARMS:
+          </h3>
+
+          <ul class="list-decimal pl-6 space-y-3 text-black">
+            <li class="font-semibold">
+              <span class="text-blue-600 font-semibold">HMRC Approved:</span> Just
+              by clicking a submit button on your gift aid consented donation data,
+              you can claim directly from iCHARMS without separately logging in on
+              HMRC.
+            </li>
+            <li class="font-semibold">
+              <span class="text-blue-600 font-semibold"
+                >Streamlined Process:</span
+              > Our software simplifies the Gift Aid claim process, reducing administrative
+              burden and minimizing errors.
+            </li>
+            <li class="font-semibold">
+              <span class="text-blue-600 font-semibold"
+                >Comprehensive Tracking:</span
+              > iCHARMS helps you capture all necessary donor information and maintain
+              accurate records for Gift Aid declarations.
+            </li>
+            <li class="font-semibold">
+              <span class="text-blue-600 font-semibold"
+                >Compliance Assurance:</span
+              > Stay up-to-date with HMRC requirements and ensure your Gift Aid claims
+              meet all necessary criteria.
+            </li>
+          </ul>
+
+          <p class="mt-4 text-black text-lg lg:text-lg text-left lg:text-left">
+            iCHARMS is developed by Techno Serve, a trusted name in charity
+            software solutions. You can find us listed under ‘T’ in alphabetical
+            order on the HMRC’s official list of approved software providers for
+            Gift Aid claims.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Section (Image and Benefits) -->
+      <div
+        class="w-full lg:w-1/2 mt-8 lg:mt-0 flex flex-col items-center lg:items-start space-y-6"
+      >
+        <!-- Image Section -->
+        <div class="relative w-full">
+          <img
+            src="/assets/img/giftaid-laptop.png"
+            alt="iCHARMS dashboard"
+            class="w-full h-auto rounded-lg"
+          />
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="text-left lg:text-left">
+          <h4 class="text-xl font-bold text-gray-800 mb-2">
+            By implementing iCHARMS, your charity can:
+          </h4>
+          <ul class="space-y-2 text-indigo-600">
+            <li>• Increase Gift Aid recovery rates</li>
+            <li>• Reduce time spent on administrative tasks</li>
+            <li>• Ensure compliance with HMRC regulations</li>
+            <li>• Maximize the value of every eligible donation</li>
+          </ul>
+        </div>
+
+        <!-- Call to Action -->
+        <p class="text-black text-lg lg:text-xl text-left lg:text-left">
+          Let iCHARMS help you unlock the full potential of Gift Aid for your
+          charity. Contact us today to learn more about how our software can
+          transform your Gift Aid claim process and boost your funding.
+        </p>
+
+        <button
+          class="btn is-large group inline-block bg-[white] text-[#8E66FF] border border-[#8E66FF] hover:bg-[#8E66FF] hover:text-white"
+          ><a
+            href="https://www.gov.uk/government/publications/charities-online-commercial-software-suppliers/charities-online-commercial-software-suppliers "
+            >Find Us Here</a
+          ></button
+        >
+      </div>
+    </div>
+  </section>
+  <!-- Section Nine End -->
+
+  <!-- Section Ten Start -->
+  <section class="section-content pt-12">
+    <!-- Section Space -->
+    <div class="section-space-bottom">
+      <!-- Section Container -->
+      <div class="container-default">
+        <div class="flex flex-col gap-y-20 lg:gap-y-[100px] xl:gap-y-[120px]">
+          <!-- Content Area Single -->
+          <div
+            class="grid items-center gap-10 lg:grid-cols-[0.8fr_minmax(0,_1fr)]"
+          >
+            <!-- Content Block Left -->
+            <div
+              class="jos order-1 lg:order-2 md:ms-20"
+              data-jos_animation="fade-right"
+            >
+              <!-- Section Wrapper -->
+              <div>
+                <!-- Section Block -->
+                <div class="mb-5">
+                  <h2
+                    class="font-PublicSans text-4xl font-semibold leading-[1.05] -tracking-[2px] text-[#0F1642]"
+                  >
+                    Already Claiming Gift Aid? <br /> Optimize it with us
+                  </h2>
+                </div>
+                <!-- Section Block -->
+              </div>
+              <!-- Section Wrapper -->
+              <!-- Content Text -->
+              <p class="text-[#2C2C2C] pb-4">
+                If your charity is already claiming Gift Aid, you can enhance
+                your fundraising efforts significantly. By ensuring all eligible
+                donors complete the Gift Aid declaration, you can boost your
+                donations by an additional 25% at no cost to them.
+                <br /><br />
+                Our expertise can help you streamline the claiming process in 10%
+                to 25%, making it easier to maximize your claims and improve cash
+                flow. We provide tailored solutions that simplify data management
+                and compliance with HMRC guidelines. Contact us today to discover
+                how we can assist in optimizing your Gift Aid claims and increase
+                the financial support for your charity.
+              </p>
+              <!-- Content Text -->
+
+              <a
+                href="/contact"
+                class="btn is-large group inline-block bg-[white] text-[#8E66FF] border border-[#8E66FF] hover:bg-[#8E66FF] hover:text-white"
+              >
+                <span>
+                  Contact Us Now<i
+                    class="fa-regular fa-arrow-right ml-[10px] text-2xl leading-none"
+                  ></i>
+                </span>
+              </a>
+            </div>
+            <!-- Content Block Left -->
+            <!-- Content Block Right -->
+            <div class="jos order-2 md:order-1" data-jos_animation="fade-left">
+              <div
+                class="w-full overflow-hidden rounded-lg mx-auto lg:mx-0 max-w-full"
+              >
+                <img
+                  src="/assets/img/giftaid-claim.png"
+                  alt="content-img-1"
+                  width="526"
+                  height="500"
+                  class="h-auto w-full"
+                />
+              </div>
+            </div>
+            <!-- Content Block Right -->
+          </div>
+          <!-- Content Area Single -->
+        </div>
+      </div>
+      <!-- Section Container -->
+    </div>
+    <!-- Section Space -->
+  </section>
+  <!-- Section Ten End -->
+
+  <!-- Section Eleven Start -->
+  <section
+    class="max-w-6xl mx-auto py-16 px-4 flex flex-col md:flex-row items-center justify-between"
+  >
+    <!-- Left Text Section -->
+    <div class="md:w-1/5 text-center md:text-left mb-8 md:mb-0">
+      <h2 class="text-4xl font-semibold text-gray-800">
+        VALIDATE YOUR <br /> GIFT AID <br /> SUBMISSION
+      </h2>
+    </div>
+
+    <!-- Center Logo Section -->
+    <div class="relative md:w-3/5 flex justify-center mb-8 md:mb-0">
+      <div class="relative">
+        <!-- Circle with logo -->
+        <a href="/pop-up-form">
+          <div
+            class="w-80 h-80 rounded-full border border-black flex items-center justify-center"
+          >
+            <img
+              src="/assets/img/giftaid.png"
+              alt="Gift Aid It"
+              class="w-64 h-auto"
+            />
+          </div></a
+        >
+
+        <!-- Blue arrow icon -->
+        <div
+          x-data="{ open: false }"
+          class="absolute top-0 right-4 bg-blue-500 text-white p-3 rounded-full hover:scale-125 transition-transform"
+        >
+          <span x-on:click="open = true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              style="transform: rotate(-45deg);"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Text Section -->
+    <div class="md:w-2/5 text-center md:text-left">
+      <p class="text-gray-600 leading-relaxed">
+        With over 21 years of experience, We ensure your charity’s Gift Aid
+        claims remain HMRC compliant and audit-ready. Our Gift Aid Validation
+        service secures a reliable income stream by reviewing and validating
+        past claims, helping your organization grow securely while staying
+        compliant for future income through Gift Aid.
+      </p>
+    </div>
+  </section>
+  <!-- Section Eleven End -->
+  <!-- Fixed Section Start -->
+  <div
+    class="bg-[#5731F4] flex justify-evenly items-center h-24 sticky z-20 bottom-0"
+  >
+    <h3 class="text-white font-semibold text-2xl -tracking-normal">
+      Get In Touch
+    </h3>
+    <input
+      class="bg-transparent border-2 rounded p-2 placeholder-white text-white"
+      type="text"
+      placeholder="Charity Reg Number"
+    />
+    <input
+      class="bg-transparent border-2 rounded p-2 placeholder-white text-white"
+      type="text"
+      placeholder="UK Phone Number"
+    />
+    <input
+      class="bg-transparent border-2 rounded p-2 placeholder-white text-white"
+      type="text"
+      placeholder="Charity Name"
+    />
+    <input
+      class="bg-transparent border-2 rounded p-2 placeholder-white text-white"
+      type="text"
+      placeholder="Yours Email"
+    />
+    <button class="text-white bg-[#A91F21] py-2 px-6 rounded">Submit</button>
+  </div>
+  <!-- Fixed Section End -->
+</Layout>

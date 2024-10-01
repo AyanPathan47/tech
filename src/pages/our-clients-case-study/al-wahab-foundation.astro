@@ -1,0 +1,437 @@
+---
+import Layouts from "../../layouts/Layout.astro";
+const title =
+  Astro.url.pathname.split("/").pop().replace(/\..*$/, "") || "Home";
+---
+
+<Layouts>
+  <main class="main-wrapper relative overflow-hidden">
+    <!--...::: Breadcrumb Section Start :::... -->
+    <section class="section-breadcrumb">
+      <!-- Breadcrumb Section Spacer -->
+      <div class="breadcrumb-wrapper">
+        <!-- Section Container -->
+        <div class="container-default">
+          <div class="breadcrumb-block">
+            <h1 class="breadcrumb-title capitalize">{title}</h1>
+            <ul class="breadcrumb-nav">
+              <li><a href="">Home</a></li>
+              <li>
+                <a href="/our-clients-case-studies" class="capitalize"
+                  >Our Clients Case Studies</a>
+              </li>
+              <li class="capitalize">{title}</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Section Container -->
+
+        <!-- Breadcrumb Shape - 1 -->
+        <div class="absolute left-0 top-0 -z-10">
+          <img
+            src="/assets/img/elements/breadcrumb-shape-1.svg"
+            alt="hero-shape-1"
+            width="291"
+            height="380"
+          />
+        </div>
+
+        <!-- Breadcrumb Shape - 2 -->
+        <div class="absolute bottom-0 right-0 -z-[1]">
+          <img
+            src="/assets/img/elements/breadcrumb-shape-2.svg"
+            alt="hero-shape-2"
+            width="291"
+            height="380"
+          />
+        </div>
+      </div>
+      <!-- Breadcrumb Section Spacer -->
+    </section>
+    <!--...::: Breadcrumb Section End :::... -->
+
+    <!--...::: Portfolio Section Start :::... -->
+    <section class="section-portfolio">
+      <!-- Section Space -->
+      <div class="">
+        <!-- Section Container -->
+        <div class="container-default">
+          <!-- Portfolio Details Area -->
+          <div class="mx-auto max-w-[1076px] rounded-xl">
+            <!-- Portfolio Main Image -->
+            <img
+              src="/assets/img/client/awf-case-study.png"
+              alt="portfolio-main-img"
+              width="1076"
+              height="600"
+              class="h-auto w-full rounded-[10px]"
+            />
+            <!-- Portfolio Main Image -->
+
+            <!-- Portfolio Info List -->
+            <ul
+              class="mb-[60px] mt-[30px] flex flex-wrap justify-between gap-8"
+            >
+              <li>
+                <span
+                  class="mb-[5px] block text-xl font-bold leading-[1.4] text-ColorBlack"
+                  >Client:</span
+                >
+                <span class="text-ColorBlack/80">Al-Wahab Foundation</span>
+              </li>
+              <li>
+                <span
+                  class="mb-[5px] block text-xl font-bold leading-[1.4] text-ColorBlack"
+                  >Category:</span
+                >
+                <span class="text-ColorBlack/80">Non-profit/Charity</span>
+              </li>
+              <li>
+                <span
+                  class="mb-[5px] block text-xl font-bold leading-[1.4] text-ColorBlack"
+                  >Duration:</span
+                >
+                <span class="text-ColorBlack/80">2 Years</span>
+              </li>
+              <li>
+                <span class="mb-[5px] block text-xl font-bold leading-[1.4]"
+                  >Website Link:</span
+                >
+                <a href="https://alwahabfoundation.org/" target="_blank">
+                  <span class="text-ColorBlack/80 hover:text-blue-500"
+                    >https://alwahabfoundation.org/</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <!-- Portfolio Info List -->
+
+            <!-- Portfolio Rich Text -->
+            <div class="rich-text">
+              <h2 class="text-2xl font-bold mb-4 flex items-center">
+                <span class="border-l-4 border-yellow-500 bg-yellow-100 pl-3"
+                  >The Client &nbsp;</span
+                >
+              </h2>
+              <p>
+                Since 2014, Al-Wahab Foundation (AWF) has delivered emergency
+                and developmental aid to combat and eradicate poverty, growing
+                to reach thousands of people each year. Our aim is to see a
+                world where people are empowered to be able to step up out of
+                deprivation and build their future with independence and
+                dignity. With your support, our aid solutions serve people in
+                remote and rural areas, providing food, clean water, healthcare,
+                education and innovative livelihood support programmes.
+              </p>
+            </div>
+            <div class="rich-text pt-8">
+              <h2 class="text-2xl font-bold mb-4 flex items-center">
+                <span class="border-l-4 border-red-500 bg-red-100 pl-3"
+                  >The Challenges &nbsp;</span
+                >
+              </h2>
+              <ul class="list-disc list-inside space-y-4">
+                <li>
+                  <strong>Limited Online Presence:</strong> Prior to the SEO campaign,
+                  the Al-Wahab Foundation's website suffered from low traffic and
+                  poor search engine rankings.
+                </li>
+                <li>
+                  <strong>Seasonal Engagement Peaks:</strong> Ramadan is a crucial
+                  period for donations, and the Foundation needed to maximize visibility
+                  and donor engagement during this time.
+                </li>
+                <li>
+                  <strong>Competitive Keywords:</strong> The need to rank for highly
+                  competitive keywords related to Ramadan and charitable giving in
+                  a short time frame.
+                </li>
+              </ul>
+            </div>
+            <div class="rich-text pt-8">
+              <h2 class="text-2xl font-bold mb-4 flex items-center">
+                <span class="border-l-4 border-blue-500 bg-blue-100 pl-3"
+                  >The Solution &nbsp;</span
+                >
+              </h2>
+              <ul class="list-disc list-inside space-y-4">
+                <strong class="text-2xl"
+                  >Website Development & Maintenance: <br />
+                </strong>
+                <li class="pl-4">
+                  Developed a user-friendly, responsive website for Edhi UK,
+                  ensuring it catered to both desktop and mobile users.
+                </li>
+                <li class="pl-4 pb-3">
+                  Regularly updated and maintained the website to improve user
+                  experience and performance.
+                </li>
+
+                <strong class="text-2xl">YouTube Optimization: </strong>
+                <li class="pl-4">
+                  Optimized Edhi UK's YouTube channel by improving video titles,
+                  descriptions, and tags, increasing visibility on YouTube and
+                  Google.
+                </li>
+                <li class="pl-4 pb-3">
+                  Created and optimized playlists to group relevant content and
+                  enhance user engagement.
+                </li>
+                <strong class="text-2xl"
+                  >SEO Strategy:
+
+                  <br />
+                </strong>
+                <li class="pl-4">
+                 <span class="font-semibold">On-Page SEO: </span> Optimized meta tags, headers, and content for
+                  relevant keywords related to charity and donations.
+                </li>
+                <li class="pl-4">
+                 <span class="font-semibold">Off-Page SEO: </span> Built a strong backlink profile by acquiring
+                  over 500 backlinks from 100+ unique referring domains,
+                  boosting website credibility.
+                </li><li class="pl-4">
+                <span class="font-semibold">Content Strategy:</span>   Developed blog posts and articles aligned
+                  with charity-related keywords to improve organic search
+                  rankings.
+                </li>
+              </ul>
+            </div>
+            <div class="rich-text pt-8">
+              <h2 class="text-2xl font-bold mb-4 flex items-center">
+                <span class="border-l-4 border-green-500 bg-green-100 pl-3"
+                  >The Result &nbsp;</span
+                >
+              </h2>
+              <ul class="space-y-4 list-disc list-inside">
+              <li class="pl-4">
+                <span class="font-semibold"> Increased Traffic: </span> The website grew from zero traffic to 1.5k monthly visitors within two months, indicating a successful SEO and content strategy.
+
+               </li>
+               <li class="pl-4">
+                <span class="font-semibold">Enhanced Backlink Profile:  </span> Acquired over 500 high-quality backlinks from more than 100 unique referring domains, significantly boosting the website's authority.
+
+               </li><li class="pl-4">
+               <span class="font-semibold">Improved Domain Authority:</span> The website's domain authority increased from 0 to 20 in just two months, enhancing its credibility and ranking potential on search engines.
+
+                 rankings.
+               </li></ul>
+            </div>
+            <section
+              class="max-w-4xl ml-0 mr-auto flex flex-col justify-start pt-6"
+            >
+              <h3 class="pb-1 text-2xl font-bold tracking-normal">
+                Keyword : <span class="text-gray-800 font-normal">chrity </span>
+              </h3>
+              <h3 class="pb-3 text-2xl font-bold tracking-normal">
+                Search Volume : <span class="text-gray-800 font-normal"
+                  >1000
+                </span>
+              </h3>
+
+              <img
+                src="/assets/img/th-1/portfolio-main-img.jpg"
+                alt="portfolio-main-img"
+                width="1076"
+                height="600"
+                class="h-auto w-full rounded-[10px]"
+              />
+            </section>
+
+            <!-- Portfolio Rich Text -->
+          </div>
+          <!-- Portfolio Details Area -->
+        </div>
+        <!-- Section Container -->
+      </div>
+      <!-- Section Space -->
+    </section>
+
+    <!--...::: Portfolio Section End :::... -->
+
+ 
+
+    <!--...::: Related Portfolio Section Start :::... -->
+    <section class="related-portfolio-section">
+      <!-- Section Space -->
+      <div class="section-space">
+        <!-- Section Container -->
+        <div class="container-default">
+          <div class="mx-auto max-w-[1076px]">
+            <!-- Section Wrapper -->
+            <div class="jos flex flex-wrap items-center justify-between gap-8">
+              <!-- Section Block -->
+              <div class="mb-5">
+                <h2>Related Project:</h2>
+              </div>
+              <!-- Section Block -->
+            </div>
+            <!-- Section Wrapper -->
+            <p class="jos max-w-[856px] pb-2">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suf alteration in some form, by injected
+              humour, or randomised words which don't look even slightly
+              believable.
+            </p>
+
+            <!-- Portfolio List -->
+            <div class="grid gap-8 sm:grid-cols-2">
+              <!-- Portfolio Item -->
+              <div class="jos">
+                <div class="group">
+                  <div
+                    class="relative z-10 after:absolute after:inset-0 after:-z-10 after:translate-x-0 after:translate-y-0 after:rounded-[11px] after:bg-ColorBlack after:transition-all after:duration-300 after:ease-in-out hover:after:translate-x-[10px] hover:after:translate-y-[10px]"
+                  >
+                    <div class="overflow-hidden rounded-[10px]">
+                      <img
+                        src="/assets/img/th-1/portfolio-modern-img-1.jpg"
+                        alt="portfolio-modern-img-1"
+                        width="406"
+                        height="350"
+                        class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <div
+                      class="mb-3 flex flex-wrap gap-2 text-xl leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue lg:flex-nowrap xl:text-2xl"
+                    >
+                      <a href="portfolio-details.html" class="font-semibold"
+                        >ICHARMS
+                      </a>
+                      <span>—</span>
+                      <a href="#" class="hover:text-ColorBlue">Software</a>
+                    </div>
+                    <p class="line-clamp-2 text-base sm:max-w-[350px]">
+                      Lectus faucibus ac sollicitudin feugiat sit. Ac tellus sit
+                      commodo duis mi interdum
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item -->
+              <!-- Portfolio Item -->
+              <div class="jos">
+                <div class="group">
+                  <div
+                    class="relative z-10 after:absolute after:inset-0 after:-z-10 after:translate-x-0 after:translate-y-0 after:rounded-[11px] after:bg-ColorBlack after:transition-all after:duration-300 after:ease-in-out hover:after:translate-x-[10px] hover:after:translate-y-[10px]"
+                  >
+                    <div class="overflow-hidden rounded-[10px]">
+                      <img
+                        src="/assets/img/th-1/portfolio-modern-img-2.jpg"
+                        alt="portfolio-modern-img-2"
+                        width="406"
+                        height="350"
+                        class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <div
+                      class="mb-3 flex flex-wrap gap-2 text-xl leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue lg:flex-nowrap xl:text-2xl"
+                    >
+                      <a href="portfolio-details.html" class="font-semibold"
+                        >Website
+                      </a>
+                      <span>—</span>
+                      <a href="#" class="hover:text-ColorBlue">Branding</a>
+                    </div>
+                    <p class="line-clamp-2 text-base sm:max-w-[350px]">
+                      Lectus faucibus ac sollicitudin feugiat sit. Ac tellus sit
+                      commodo duis mi interdum
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item -->
+                 <!-- Portfolio Item -->
+              <div class="jos">
+                <div class="group">
+                  <div
+                    class="relative z-10 after:absolute after:inset-0 after:-z-10 after:translate-x-0 after:translate-y-0 after:rounded-[11px] after:bg-ColorBlack after:transition-all after:duration-300 after:ease-in-out hover:after:translate-x-[10px] hover:after:translate-y-[10px]"
+                  >
+                    <div class="overflow-hidden rounded-[10px]">
+                      <img
+                        src="/assets/img/th-1/portfolio-modern-img-2.jpg"
+                        alt="portfolio-modern-img-2"
+                        width="406"
+                        height="350"
+                        class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                  <div class="mt-8">
+                    <div
+                      class="mb-3 flex flex-wrap gap-2 text-xl leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue lg:flex-nowrap xl:text-2xl"
+                    >
+                      <a href="portfolio-details.html" class="font-semibold"
+                        >Website
+                      </a>
+                      <span>—</span>
+                      <a href="#" class="hover:text-ColorBlue">Branding</a>
+                    </div>
+                    <p class="line-clamp-2 text-base sm:max-w-[350px]">
+                      Lectus faucibus ac sollicitudin feugiat sit. Ac tellus sit
+                      commodo duis mi interdum
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item -->
+            </div>
+            <!-- Portfolio List -->
+          </div>
+        </div>
+        <!-- Section Container -->
+      </div>
+      <!-- Section Space -->
+    </section>
+    <!--...::: Related Portfolio Section Start :::... -->
+  </main>
+     <!-- Horizontal Text Slider -->
+     <div
+     class="overflow-hidden bg-ColorBlack py-5 text-3xl font-bold uppercase leading-[1.4] tracking-widest text-white"
+   >
+     <!-- Horizontal Slider Block-->
+     <div class="horizontal-slide-from-right-to-left flex gap-x-[30px]">
+       <span class="inline-block min-w-[855px]"
+         >We complete client's projects efficiently</span
+       >
+       <img
+         src="/assets/img/icons/fire-icon.png"
+         alt="fire-icon"
+         width="40"
+         height="40"
+       />
+       <span class="inline-block min-w-[855px]"
+         >We complete client's projects efficiently</span
+       >
+       <img
+         src="/assets/img/icons/fire-icon.png"
+         alt="fire-icon"
+         width="40"
+         height="40"
+       />
+       <span class="inline-block min-w-[855px]"
+         >We complete client's projects efficiently</span
+       >
+       <img
+         src="/assets/img/icons/fire-icon.png"
+         alt="fire-icon"
+         width="40"
+         height="40"
+       />
+       <span class="inline-block min-w-[855px]"
+         >We complete client's projects efficiently</span
+       >
+       <img
+         src="/assets/img/icons/fire-icon.png"
+         alt="fire-icon"
+         width="40"
+         height="40"
+       />
+     </div>
+     <!-- Horizontal Slider Block-->
+   </div>
+   <!-- Horizontal Text Slider -->
+</Layouts>

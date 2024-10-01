@@ -1,0 +1,480 @@
+---
+import Layouts from "../layouts/Layout.astro";
+const title = Astro.url.pathname.split('/').pop().replace(/\..*$/, '') || 'Home';
+
+---
+<Layouts>
+    <div class="page-wrapper relative z-[1] bg-white">
+        <main class="main-wrapper relative overflow-hidden">
+            <!--...::: Breadcrumb Section Start :::... -->
+            <section class="section-breadcrumb">
+                <!-- Breadcrumb Section Spacer -->
+                <div class="breadcrumb-wrapper">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <div class="breadcrumb-block">
+                            <h1 class="breadcrumb-title capitalize">{title}</h1>
+                            <ul class="breadcrumb-nav">
+                                <li><a href="/">Home</a></li>
+                                <li class="capitalize">{title}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Section Container -->
+
+                    <!-- Breadcrumb Shape - 1 -->
+                    <div class="absolute left-0 top-0 -z-10">
+                        <img src="assets/img/elements/breadcrumb-shape-1.svg" alt="hero-shape-1" width="291" height="380" />
+                    </div>
+
+                    <!-- Breadcrumb Shape - 2 -->
+                    <div class="absolute bottom-0 right-0 -z-[1]">
+                        <img src="assets/img/elements/breadcrumb-shape-2.svg" alt="hero-shape-2" width="291" height="380" />
+                    </div>
+                </div>
+                <!-- Breadcrumb Section Spacer -->
+            </section>
+            <!--...::: Breadcrumb Section End :::... -->
+
+            <!--...::: About Gallery Section Start :::... -->
+            <div class="section-about-gallery">
+                <!-- Section Spacer -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <!-- About Gallery Area -->
+                        <div class="grid gap-x-6 gap-y-10 sm:grid-cols-3">
+                            <!-- Single Gallery Image -->
+                            <div class="jos" data-jos_animation="fade-up" data-jos_delay="0">
+                                <img src="assets/img/about-2.png" alt="about-gallery-img-1" width="416" height="286" class="rounded-lg" />
+                            </div>
+                            <!-- Single Gallery Image -->
+                            <!-- Single Gallery Image -->
+                            <div class="jos sm:translate-y-10" data-jos_animation="fade-down" data-jos_delay="0.3">
+                                <img src="assets/img/about-1.png" alt="about-gallery-img-1" width="416" height="381" class="rounded-lg" />
+                            </div>
+                            <!-- Single Gallery Image -->
+                            <!-- Single Gallery Image -->
+                            <div class="jos" data-jos_animation="fade-up" data-jos_delay="0.6">
+                                <img src="assets/img/about-3.png" alt="about-gallery-img-1" width="416" height="286" class="rounded-lg" />
+                            </div>
+                            <!-- Single Gallery Image -->
+                        </div>
+                        <!-- About Gallery Area -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Spacer -->
+            </div>
+            <!--...::: About Gallery Section End :::... -->
+
+            <!--...::: Brand Section Start :::... -->
+            <div class="section-brand">
+                <div class="jos">
+                    <!-- Section Space -->
+                    <div class="pb-[60px] md:pb-20 lg:pb-[100px]">
+                        <!-- Section Container -->
+                        <div class="container-default">
+                            <div class="mx-auto mb-10 max-w-[80%] text-center text-xl font-semibold leading-[1.4] opacity-70 md:mb-16 lg:mb-20 lg:max-w-2xl">
+                                From local nonprofits to global charities, we partner with organizations of all sizes to make a difference together.
+                            </div>
+                            <!-- Brand Slider -->
+                            <div class="swiper brand-slider">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/clients/edhi-logo.png" alt="brand-1" width="186" height="46" class="h-auto w-fit" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/clients/awf-logo.png" alt="brand-2" width="186" height="46" class="h-auto w-fit" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/clients/skz-logo.png" alt="brand-3" width="186" height="46" class="h-auto w-fit" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/clients/abt-logo.png" alt="brand-4" width="186" height="46" class="h-auto w-fit" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/clients/ast-logo.png" alt="brand-5" width="186" height="46" class="h-auto w-fit" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/clients/haf-logo.png" alt="brand-1" width="186" height="46" class="h-auto w-fit" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/clients/hope-logo.png" alt="brand-2" width="186" height="46" class="h-auto w-fit" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/clients/islamic-help-logo.png" alt="brand-3" width="186" height="46" class="h-auto w-fit" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/clients/banbury-logo.png" alt="brand-4" width="186" height="46" class="h-auto w-fit" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/clients/crf-logo.png" alt="brand-5" width="186" height="46" class="h-auto w-fit" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Brand Slider -->
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Section Space -->
+                </div>
+            </div>
+            <!--...::: Brand Section End :::... -->
+
+            <!--...::: About Hero Section Start :::... -->
+            <section class="section-about-hero">
+                <div class="relative z-10 overflow-hidden bg-[#FAF9F5]">
+                    <!-- Section Space -->
+                    <div class="section-space">
+                        <!-- Section Container -->
+                        <div class="container-custom has-container-custom">
+                            <!-- About Hero Area -->
+                            <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-[60px] xl:gap-[100px] xxl:grid-cols-[1fr_minmax(0,_1.1fr)]">
+                                <!-- About Hero Image Block -->
+                                <div class="jos order-2 lg:order-1" data-jos_animation="fade-left" data-jos_delay="0">
+                                    <div class="relative flex items-center justify-center mx-auto lg:mx-0 max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-full">
+                                        <img src="assets/img/about-4.png" alt="hero image" width="600" height="579" class="h-auto w-full" />
+                                        <!-- <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q" class="group group absolute flex h-[100px] w-[100px] items-center justify-center rounded-[50%] bg-white text-ColorBlue" aria-label="video-play">
+                                            <span class="text-2xl transition-all duration-300 ease-linear group-hover:scale-110"><i class="fa-solid fa-play"></i></span>
+                                        </a> -->
+                                    </div>
+                                </div>
+                                <!-- About Hero Image Block -->
+                                <!-- About Hero Content Block -->
+                                <div class="jos order-1 lg:order-2" data-jos_animation="fade-right" data-jos_delay="0.3">
+                                    <!-- Section Wrapper -->
+                                    <div>
+                                        <!-- Section Block -->
+                                        <div class="mb-5">
+                                            <h2 class="text-3xl">
+                                                A Trusted HMRC-Listed Software Provider for Charities and Non-Profits
+
+                                            </h2>
+                                        </div>
+                                        <!-- Section Block -->
+                                        <p>
+                                            Techno Serve Solutions is a trusted digital marketing agency listed on the HMRC Charities Online service website (www.gov.uk).
+<br><br>
+                                            Our digital marketing agency is recognized by HMRC, ensuring compliance and reliability. This listing highlights our commitment to trustworthy and reliable services for charities and non-profits. With Techno Serve, you can trust our credibility and authenticity.
+                                            <br><br>
+                                            Contact us today to learn how Techno Serve can potentially grow your islamic Non-Profit organization and help you make a meaningful impact.
+                                            <br>
+                                            Techno Serve Ltd Company Number: 08655298
+                                        </p>
+                                        <!-- Horizontal Line Separator -->
+                                        <div class="my-7 h-px w-full bg-ColorBlack opacity-10 xl:my-10 xxl:my-14"></div>
+                                   
+                                    </div>
+                                    <!-- Section Wrapper -->
+                                </div>
+                                <!-- About Hero Content Block -->
+                            </div>
+                            <!-- About Hero Area -->
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Section Space -->
+                </div>
+            </section>
+            <!--...::: About Hero Section End :::... -->
+
+            <!--...::: Fact Section Start :::... -->
+            <section class="section-fact">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container-custom has-container-custom">
+                        <!-- Fact Area Block -->
+                        <div class="grid gap-10 gap-x-12 lg:grid-cols-2 xl:grid-cols-[1fr_minmax(0,_0.7fr)] xxl:gap-x-[185px]">
+                            <!-- Content Block Left -->
+                            <div class="jos" data-jos_animation="fade-right" data-jos_delay="0">
+                                <!-- Section Wrapper -->
+                                <div>
+                                    <!-- Section Block -->
+                                    <div class="mb-5">
+                                        <h2 class="text-3xl">
+                                            We're on a mission to help your business grow
+
+                                        </h2>
+                                    </div>
+                                    <!-- Section Block -->
+                                    <p>
+                                        Web and Software Performance Optimization: Enhancing your digital presence for peak efficiency.
+                                        Strategic Donor Targeting: Connecting you with the right supporters to fuel your mission.
+                                        Charity-Focused Social Media Engagement: Amplifying your cause across social platforms.
+                                        At TechnoServe Software Solutions, we empower businesses and charities to thrive in the digital landscape, optimizing performance and maximizing impact.
+                                    </p>
+                                </div>
+                                <!-- Section Wrapper -->
+                                <a href="contact.html" class="btn is-blue is-rounded btn-animation is-large group mt-8 inline-block lg:mt-[50px]"><span>Get in touch</span></a>
+                            </div>
+                            <!-- Content Block Left -->
+                            <!-- Content Block Right -->
+                            <div>
+                                <!-- Counter List -->
+                                <div class="grid items-center justify-center gap-6 sm:grid-cols-2 sm:gap-0.5 sm:bg-ColorOffWhite">
+                                    <!-- Counter Item -->
+                                    <div class="text-center sm:bg-white sm:pb-10">
+                                        <div class="mb-1 font-PlusJakartaSans text-4xl font-extrabold leading-[1.2] -tracking-[1px] text-ColorBlack sm:text-5xl lg:text-[64px] xl:text-[70px]" data-module="countup">
+                                            <span class="start-number" data-countup-number="36">36</span>+
+                                        </div>
+                                        <span class="text-xl font-semibold text-ColorBlue">Satisfied charities</span>
+                                    </div>
+                                    <!-- Counter Item -->
+                                    <!-- Counter Item -->
+                                    <div class="text-center sm:bg-white sm:pb-10">
+                                        <div class="mb-1 font-PlusJakartaSans text-4xl font-extrabold leading-[1.2] -tracking-[1px] text-ColorBlack sm:text-5xl lg:text-[64px] xl:text-[70px]" data-module="countup">
+                                            <span class="start-number" data-countup-number="9">9</span>+
+                                        </div>
+                                        <span class="text-xl font-semibold text-ColorBlue">Years of Experience</span>
+                                    </div>
+                                    <!-- Counter Item -->
+                                    <!-- Counter Item -->
+                                    <div class="text-center sm:bg-white sm:pt-10">
+                                        <div class="mb-1 font-PlusJakartaSans text-4xl font-extrabold leading-[1.2] -tracking-[1px] text-ColorBlack sm:text-5xl lg:text-[64px] xl:text-[70px]" data-module="countup">
+                                            <span class="start-number" data-countup-number="54">54</span>+
+                                        </div>
+                                        <span class="text-xl font-semibold text-ColorBlue">Success projects</span>
+                                    </div>
+                                    <!-- Counter Item -->
+                                    <!-- Counter Item -->
+                                    <div class="text-center sm:bg-white sm:pt-10">
+                                        <div class="mb-1 font-PlusJakartaSans text-4xl font-extrabold leading-[1.2] -tracking-[1px] text-ColorBlack sm:text-5xl lg:text-[64px] xl:text-[70px]" data-module="countup">
+                                            <span class="start-number" data-countup-number="36">72</span>+
+                                        </div>
+                                        <span class="text-xl font-semibold text-ColorBlue">Awards winning</span>
+                                    </div>
+                                    <!-- Counter Item -->
+                                </div>
+                                <!-- Counter List -->
+                            </div>
+                            <!-- Content Block Right -->
+                        </div>
+                        <!-- Fact Area Block -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!--...::: Fact Section End :::... -->
+
+
+            <!--...::: Portfolio Section Start :::... -->
+            <section class="section-portfolio">
+                <div class="relative z-10 overflow-hidden">
+                    <!-- Section Space -->
+                    <div class="section-space">
+                        <!-- Section Container -->
+                        <div class="container-default">
+                            <!-- Section Wrapper -->
+                            <div class="jos mb-[60px] flex flex-wrap items-end justify-between gap-8 xl:mb-20">
+                                <!-- Section Block -->
+                                <div class="max-w-[550px]">
+                                    <h2 class="text-[45px] font-bold">We create world-class web design, & branding</h2>
+                                </div>
+                                <!-- Section Block -->
+                                <a href="portfolio.html" class="btn is-blue is-rounded btn-animation is-large group"><span>See more works</span></a>
+                            </div>
+                            <!-- Section Wrapper -->
+
+                            <!-- Portfolio List -->
+                            <div class="grid gap-8 md:grid-cols-2 lg:gap-10 xl:gap-[60px]">
+                                <!-- Portfolio Item -->
+                                <div class="jos" data-jos_delay="0">
+                                    <div class="group">
+                                        <div class="overflow-hidden rounded-[10px]">
+                                            <img src="assets/img/edhi.png" alt="portfolio-img-1" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                                        </div>
+                                        <div class="mt-6">
+                                            <div class="mb-5 flex flex-wrap justify-between gap-5 lg:flex-nowrap xl:mb-7">
+                                                <a href="portfolio-details.html" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue xl:text-2xl">Website — The power of communication</a>
+                                                <a href="#" class="hover:text-ColorBlue">UI/UX Design</a>
+                                            </div>
+                                            <a href="https://edhiuk.org/" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                                <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item -->
+                                <!-- Portfolio Item -->
+                                <div class="jos" data-jos_delay="0.3">
+                                    <div class="group">
+                                        <div class="overflow-hidden rounded-[10px]">
+                                            <img src="assets/img/al-wahab.png" alt="portfolio-img-2" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                                        </div>
+                                        <div class="mt-6">
+                                            <div class="mb-5 flex flex-wrap justify-between gap-5 lg:flex-nowrap xl:mb-7">
+                                                <a href="portfolio-details.html" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue xl:text-2xl">Website — Charity website.</a>
+                                                <a href="#" class="hover:text-ColorBlue">Branding</a>
+                                            </div>
+                                            <a href="https://alwahabfoundation.org/" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                                <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item -->
+                            </div>
+                            <!-- Portfolio List -->
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Section Space -->
+
+                    <!-- Portfolio Shape - 2 -->
+                    <div class="absolute right-0 top-0 -z-10">
+                        <img src="assets/img/elements/portfolio-1-shape-1.svg" alt="portfolio-1-shape-1" width="467" height="609" />
+                    </div>
+                </div>
+            </section>
+            <!--...::: Portfolio Section End :::... -->
+
+
+
+            <!--...::: FAQ Section Start :::... -->
+            <section class="section-faq">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <!-- Section Content Wrapper -->
+                        <div class="jos mb-[60px] xl:mb-20">
+                            <!-- Section Content Block -->
+                            <div class="mx-auto max-w-[625px]">
+                                <h2 class="text-center">
+                                    Frequently Asked Questions About TechnoServe Software Solutions
+                                </h2>
+                            </div>
+                            <!-- Section Content Block -->
+                        </div>
+                        <!-- Section Content Wrapper -->
+                        <!-- FAQ Area -->
+                        <div class="jos">
+                            <!-- Accordion List -->
+                            <ul class="mx-auto max-w-[1076px] rounded-[10px] border border-ColorBlack">
+                                <!-- Accordion Item -->
+                                <li class="accordion-item active overflow-hidden border-b border-ColorBlack p-[30px] last:border-b-0">
+                                    <!-- Accordion Header -->
+                                    <div class="accordion-header flex justify-between gap-6 text-xl font-semibold text-ColorBlack">
+                                        <button class="flex-1 text-left">
+                                            Q. What services does TechnoServe Software Solutions provide?
+                                        </button>
+                                        <div class="accordion-icon-1 relative flex h-5 w-5 items-center justify-center rounded-[50%] bg-ColorBlue">
+                                            <span class="inline-block h-0.5 w-[10px] rounded-sm bg-white"></span>
+                                            <span class="absolute inline-block h-[10px] w-0.5 rotate-0 rounded-sm bg-white"></span>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion Header -->
+                                    <!-- Accordion Body -->
+                                    <div class="accordion-body max-w-[826px] opacity-80">
+                                        <p class="pt-5">
+                                            TechnoServe Software Solutions offers custom software development, cloud computing, web and mobile app development, IT consulting, and more to help businesses scale with technology.
+                                        </p>
+                                    </div>
+                                    <!-- Accordion Body -->
+                                </li>
+                                <!-- Accordion Item -->
+                                <li class="accordion-item overflow-hidden border-b border-ColorBlack p-[30px] last:border-b-0">
+                                    <!-- Accordion Header -->
+                                    <div class="accordion-header flex justify-between gap-6 text-xl font-semibold text-ColorBlack">
+                                        <button class="flex-1 text-left">
+                                            Q. Why should I choose TechnoServe for my software needs?
+                                        </button>
+                                        <div class="accordion-icon-1 relative flex h-5 w-5 items-center justify-center rounded-[50%] bg-ColorBlue">
+                                            <span class="inline-block h-0.5 w-[10px] rounded-sm bg-white"></span>
+                                            <span class="absolute inline-block h-[10px] w-0.5 rotate-0 rounded-sm bg-white"></span>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion Header -->
+                                    <!-- Accordion Body -->
+                                    <div class="accordion-body max-w-[826px] opacity-80">
+                                        <p class="pt-5">
+                                            We offer scalable, innovative, and secure solutions tailored to your business needs. Our experienced team ensures you receive the latest in technology and best practices to optimize your operations.
+                                        </p>
+                                    </div>
+                                    <!-- Accordion Body -->
+                                </li>
+                                <!-- Accordion Item -->
+                                <li class="accordion-item overflow-hidden border-b border-ColorBlack p-[30px] last:border-b-0">
+                                    <!-- Accordion Header -->
+                                    <div class="accordion-header flex justify-between gap-6 text-xl font-semibold text-ColorBlack">
+                                        <button class="flex-1 text-left">
+                                            Q. How does TechnoServe ensure the security of its software solutions?
+                                        </button>
+                                        <div class="accordion-icon-1 relative flex h-5 w-5 items-center justify-center rounded-[50%] bg-ColorBlue">
+                                            <span class="inline-block h-0.5 w-[10px] rounded-sm bg-white"></span>
+                                            <span class="absolute inline-block h-[10px] w-0.5 rotate-0 rounded-sm bg-white"></span>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion Header -->
+                                    <!-- Accordion Body -->
+                                    <div class="accordion-body max-w-[826px] opacity-80">
+                                        <p class="pt-5">
+                                            Security is our top priority. We implement industry-standard encryption, robust authentication mechanisms, and regular security audits to ensure that your data and systems are protected.
+                                        </p>
+                                    </div>
+                                    <!-- Accordion Body -->
+                                </li>
+                                <!-- Accordion Item -->
+                                <li class="accordion-item overflow-hidden border-b border-ColorBlack p-[30px] last:border-b-0">
+                                    <!-- Accordion Header -->
+                                    <div class="accordion-header flex justify-between gap-6 text-xl font-semibold text-ColorBlack">
+                                        <button class="flex-1 text-left">
+                                            Q. How do you charge for software development services?
+                                        </button>
+                                        <div class="accordion-icon-1 relative flex h-5 w-5 items-center justify-center rounded-[50%] bg-ColorBlue">
+                                            <span class="inline-block h-0.5 w-[10px] rounded-sm bg-white"></span>
+                                            <span class="absolute inline-block h-[10px] w-0.5 rotate-0 rounded-sm bg-white"></span>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion Header -->
+                                    <!-- Accordion Body -->
+                                    <div class="accordion-body max-w-[826px] opacity-80">
+                                        <p class="pt-5">
+                                            Our pricing is based on the scope and complexity of the project. We offer flexible engagement models including hourly rates, fixed-price projects, and retainer models to suit your business requirements.
+                                        </p>
+                                    </div>
+                                    <!-- Accordion Body -->
+                                </li>
+                                <!-- Accordion Item -->
+                                <li class="accordion-item overflow-hidden border-b border-ColorBlack p-[30px] last:border-b-0">
+                                    <!-- Accordion Header -->
+                                    <div class="accordion-header flex justify-between gap-6 text-xl font-semibold text-ColorBlack">
+                                        <button class="flex-1 text-left">
+                                            Q. How long does it take to develop a custom software solution?
+                                        </button>
+                                        <div class="accordion-icon-1 relative flex h-5 w-5 items-center justify-center rounded-[50%] bg-ColorBlue">
+                                            <span class="inline-block h-0.5 w-[10px] rounded-sm bg-white"></span>
+                                            <span class="absolute inline-block h-[10px] w-0.5 rotate-0 rounded-sm bg-white"></span>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion Header -->
+                                    <!-- Accordion Body -->
+                                    <div class="accordion-body max-w-[826px] opacity-80">
+                                        <p class="pt-5">
+                                            The development timeline depends on the complexity of the project and your specific needs. Typically, small projects take 2-3 months, while more complex solutions can take 6-12 months or more.
+                                        </p>
+                                    </div>
+                                    <!-- Accordion Body -->
+                                </li>
+                            </ul>
+                            <!-- Accordion List -->
+            
+                            <div class="jos mt-[60px] flex justify-center xl:mt-20">
+                                <a href="/contact" class="btn is-blue is-rounded btn-animation is-large group"><span>Still have questions? Contact us</span></a>
+                            </div>
+                        </div>
+                        <!-- FAQ Area -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            
+            <!--...::: FAQ Section End :::... -->
+        </main>
+
+    </div>
+</Layouts>
